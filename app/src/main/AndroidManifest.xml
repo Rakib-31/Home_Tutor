@@ -21,7 +21,6 @@
         <activity android:name=".EnglishActivity" />
         <activity android:name=".Alphabet" />
         <activity android:name=".NumberLayout" />
-        <activity android:name=".OneTwoActivity"></activity>
     </application>
 
 </manifest>

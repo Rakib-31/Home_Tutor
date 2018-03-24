@@ -57,6 +57,19 @@ public class NumberLayout extends AppCompatActivity implements View.OnClickListe
 
         }
 
+        else if(v.getId () == R.id.prviousButtonId)
+        {
+            p--;
+            if (p == 0)
+            {
+                p = 99;
+            }
+            String str = String.valueOf ( p );
+
+            numberplaceButton.setText ( str );
+
+        }
+
     }
 
 
