@@ -44,5 +44,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(inten);
         }
 
+        else if(v.getId() == R.id.number){
+            Intent inten = new Intent(MainActivity.this, NumberLayout.class);
+            startActivity(inten);
+        }
+
     }
 }
