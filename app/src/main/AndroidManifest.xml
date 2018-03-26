@@ -18,9 +18,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".EnglishActivity" />
-        <activity android:name=".Alphabet" />
-        <activity android:name=".NumberLayout" />
+        <activity android:name=".EnglishActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".Alphabet" android:screenOrientation="landscape"/>
+        <activity android:name=".NumberLayout"
+            android:screenOrientation="landscape"
+            />
     </application>
 
 </manifest>
