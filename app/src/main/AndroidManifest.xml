@@ -17,7 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".EnglishActivity" />
-        <activity android:name=".Alphabet"></activity>
+        <activity android:name=".Alphabet" />
+        <activity android:name=".Vowel" />
+        <activity android:name=".Consonant"></activity>
     </application>
 
 </manifest>
