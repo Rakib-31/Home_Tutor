@@ -49,5 +49,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(inten);
         }
 
+        else if(v.getId() == R.id.math){
+            Intent inten = new Intent(MainActivity.this, MathPractice.class);
+            startActivity(inten);
+        }
+
     }
 }
