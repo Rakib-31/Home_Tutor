@@ -5,12 +5,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
+
+import java.lang.reflect.Array;
 
 public class NumberLayout extends AppCompatActivity implements View.OnClickListener{
 
     private Button zerotonineButton, sunnotonoyButton , pronouncationButton,numberplaceButton;
     private ImageButton nextButton,previousButton;
-    int p = 0;
+
+    int p = 0,i = 0, j = 0;
+    boolean test;
+
+    String[] banglaNumberArray = {"১","২","৩","৪","৫","৬","৭","৮","৯","১০"};
+    String[] englishaNumberArray = {"1","2","3","4","5","6","7","8","9","10"};
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,33 +51,83 @@ public class NumberLayout extends AppCompatActivity implements View.OnClickListe
         {
 
             numberplaceButton.setText ( "0" );
+            test = true;
+            i = 0;
+
         }
 
-       else if(v.getId () == R.id.nextButtonId)
+        else if (v.getId () == R.id.sunnotonoyButtonId)
         {
-            p++;
-            if (p == 100)
-            {
-                p = 0;
-            }
-            String str = String.valueOf ( p );
-
-            numberplaceButton.setText ( str );
+            numberplaceButton.setText ( "০" );
+            test = false;
+            j = 0;
 
         }
 
-        else if(v.getId () == R.id.prviousButtonId)
+        else if(v.getId () == R.id.nextButtonId)
         {
-            p--;
-            if (p == 0)
-            {
-                p = 99;
-            }
-            String str = String.valueOf ( p );
 
-            numberplaceButton.setText ( str );
+
+           if (test)
+           {
+               numberplaceButton.setText ( englishaNumberArray[i] );
+
+               if (i==9)
+               {
+                 i = -1;
+               }
+               i++;
+           }
+
+           else
+           {
+               numberplaceButton.setText ( banglaNumberArray[j] );
+               if (j==9)
+               {
+                   j = -1;
+               }
+               j++;
+
+           }
+
 
         }
+
+
+         else if(v.getId () == R.id.prviousButtonId)
+        {
+
+            if (test)
+            {
+                if (i== 0)
+                {
+                    i = 10;
+                }
+
+                i--;
+                numberplaceButton.setText ( englishaNumberArray[i] );
+
+            }
+
+            else
+            {
+                if (j== 0)
+                {
+                    j = 10;
+                }
+
+                j--;
+                numberplaceButton.setText ( banglaNumberArray[j] );
+
+
+            }
+
+        }
+
+
+
+
+
 
     }
 
