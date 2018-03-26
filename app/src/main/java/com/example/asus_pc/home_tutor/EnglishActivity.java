@@ -31,11 +31,11 @@ public class EnglishActivity extends AppCompatActivity implements View.OnClickLi
             startActivity(inten);
         }
         else if(v.getId() == R.id.vowel){
-            Intent inten = new Intent(EnglishActivity.this, Alphabet.class);
+            Intent inten = new Intent(EnglishActivity.this, Vowel.class);
             startActivity(inten);
         }
         else if(v.getId() == R.id.consonant){
-            Intent inten = new Intent(EnglishActivity.this, Alphabet.class);
+            Intent inten = new Intent(EnglishActivity.this, Consonant.class);
             startActivity(inten);
         }
     }
