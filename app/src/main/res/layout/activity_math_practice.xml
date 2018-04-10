@@ -86,6 +86,7 @@
             android:textSize="140dp"
             android:textColor="#212113"
             android:layout_marginLeft="30dp"
+            
             />
 
     </LinearLayout>

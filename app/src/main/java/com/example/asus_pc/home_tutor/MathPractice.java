@@ -111,6 +111,7 @@ public class MathPractice extends AppCompatActivity implements View.OnClickListe
 
         score.setText ( scoreCo );
         wrong.setText ( wrongCo );
+        //update
 
 
     }
