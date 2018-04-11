@@ -1,18 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/backgroundpic"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
     tools:context="com.example.asus_pc.home_tutor.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:weightSum="3">
 
-</android.support.constraint.ConstraintLayout>
+        <Button
+            android:id="@+id/bangla"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="Bangla Letter
+(বাংলা বর্ণমালা)
+(অ-ঔ,ক- ঁ)"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/english"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="ENGLISH LETTER
+(ইংরেজী বর্ণমালা)
+(A-Z,a-z)"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="Number
+(সংখ্যা)
+(0-9,০-৯)"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/write"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:text="Writting
+(লেখা)"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/math"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:text="Math Practice
+(অংক চর্চা)"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/draw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="Drawing
+(আঁকাআকি)"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</LinearLayout>

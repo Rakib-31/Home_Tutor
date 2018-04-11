@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="4"
+    android:background="@drawable/backgroundpic"
+    android:orientation="horizontal"
+    tools:context="com.example.asus_pc.home_tutor.Alphabet">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/zerotonineButtonId"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:text=" 0 - 9 " />
+
+        <Button
+            android:id="@+id/sunnotonoyButtonId"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:text=" ০ - ৯ " />
+
+        <Button
+            android:id="@+id/pronouncationButtonId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_weight="1"
+            android:text="pronunciation
+(উচ্চারণ)" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:weightSum="3">
+
+        <ImageButton
+            android:id="@+id/prviousButtonId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="110dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="110dp"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_launcher_left_arrow" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/numberplaceId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="110dp"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/nextButtonId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="110dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:src="@mipmap/ic_launcher_right_arrow"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>
