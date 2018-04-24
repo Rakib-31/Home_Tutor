@@ -1,6 +1,8 @@
 package com.example.asus_pc.home_tutor;
 
+import android.os.Build;
 import android.speech.tts.TextToSpeech;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -18,6 +20,7 @@ public class Alphabet extends AppCompatActivity implements View.OnClickListener{
     int result;
     boolean test = true;
 
+    @RequiresApi(api = Build.VERSION_CODES.DONUT)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +49,7 @@ public class Alphabet extends AppCompatActivity implements View.OnClickListener{
         rightarrow.setOnClickListener(this);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.DONUT)
     @Override
     public void onClick(View v) {
         if(v.getId() == R.id.small){
